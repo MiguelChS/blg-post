@@ -1,0 +1,32 @@
+.PostBlog {
+    background: #fff;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0 0 2px 0 rgba(51, 51, 51, 0.08), 0 0 2px 0 rgba(51, 51, 51, 0.08);
+    box-shadow: 0 0 2px 0 rgba(51, 51, 51, 0.08), 0 0 2px 0 rgba(51, 51, 51, 0.08);
+}
+
+.PostBlog>div.postContent {
+    overflow: hidden;
+    padding: 40px;
+}
+
+@media (max-width: 450px) {
+    .PostBlog>div.postContent {
+        padding: 15px;
+    }
+}
+
+.PostBlog>div.postThumb>a {
+    color: #444;
+    text-decoration: none;
+    -webkit-transition: all 0.33s;
+    -moz-transition: all 0.33s;
+    -ms-transition: all 0.33s;
+    -o-transition: all 0.33s;
+    transition: all 0.33s;
+    line-height: 1.4;
+}
+
+.PostBlog>div.postThumb>a>img {
+    width: 100%;
+}
