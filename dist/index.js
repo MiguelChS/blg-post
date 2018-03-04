@@ -695,6 +695,7 @@ __webpack_require__(3);
 const index_css_1 = __webpack_require__(3);
 const footer_1 = __webpack_require__(9);
 const detallePost_1 = __webpack_require__(11);
+exports.enumTypePost = detallePost_1.enumTypePost;
 exports.Post = ({ urlImage, dateString, detalle }) => {
     return (React.createElement("article", { className: index_css_1.PostBlog },
         React.createElement("div", { className: index_css_1.postThumb },
@@ -880,16 +881,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(0);
 __webpack_require__(5);
 const index_css_1 = __webpack_require__(5);
+var enumTypePost;
+(function (enumTypePost) {
+    enumTypePost[enumTypePost["PREPOST"] = 0] = "PREPOST";
+    enumTypePost[enumTypePost["POST"] = 1] = "POST";
+})(enumTypePost = exports.enumTypePost || (exports.enumTypePost = {}));
 exports.DetallePost = (props) => {
+    let addButtonLink = null;
+    if (props.typePost == enumTypePost.PREPOST) {
+        addButtonLink = (React.createElement("div", { className: `${index_css_1.continueReading} text-center text-uppercase` },
+            React.createElement("a", { href: props.linkPost }, "Continue Reading")));
+    }
     return (React.createElement("div", { className: index_css_1.detallePost },
         React.createElement("div", { className: `${index_css_1.title} text-center text-uppercase` },
             React.createElement("a", { href: "#" }, props.categoria),
             React.createElement("h2", null,
                 React.createElement("a", { href: props.linkPost }, props.title))),
-        React.createElement("div", { className: index_css_1.entryContent },
-            React.createElement("p", null, props.descripcion)),
-        React.createElement("div", { className: `${index_css_1.continueReading} text-center text-uppercase` },
-            React.createElement("a", { href: props.linkPost }, "Continue Reading"))));
+        React.createElement("div", { className: index_css_1.entryContent, dangerouslySetInnerHTML: { __html: props.descripcion } }),
+        addButtonLink));
 };
 
 
@@ -902,7 +911,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK {\n    margin: 0 auto 22px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>a {\n    color: #da521e;\n    display: inline-block;\n    font-size: 11px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    margin-bottom: 10px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>a:hover {\n    text-decoration: none;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>h2 {\n    color: #444;\n    font-size: 24px;\n    letter-spacing: 0.5px;\n    font-weight: bold;\n    font-family: \"Oswald\", sans-serif;\n    margin-top: 0;\n}\n\n@media (max-width: 768px) {\n    ._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>h2 {\n        font-size: 21px;\n    }\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>h2>a {\n    color: #444;\n    text-decoration: none;\n    -webkit-transition: all 0.33s;\n    -moz-transition: all 0.33s;\n    -ms-transition: all 0.33s;\n    -o-transition: all 0.33s;\n    transition: all 0.33s;\n    line-height: 1.4;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>h2>a:hover {\n    color: #da521e;\n    text-decoration: none;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._1S6K5-II004GvcTRGRG_V3 {\n    margin-bottom: 35px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._1S6K5-II004GvcTRGRG_V3>p {\n    font-size: 15px;\n    line-height: 25px;\n    padding-top: 0;\n    margin-top: 0;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._7i834lzQeJSQ7gtY3xvCn>a {\n    border: 1px solid #da521e;\n    color: #da521e;\n    display: inline-block;\n    font-size: 12px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    padding: 10px 18px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._7i834lzQeJSQ7gtY3xvCn>a:hover {\n    background: #da521e;\n    color: #fff;\n    text-decoration: none;\n}", ""]);
+exports.push([module.i, "._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK {\n    margin: 0 auto 22px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>a {\n    color: #da521e;\n    display: inline-block;\n    font-size: 11px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    margin-bottom: 10px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>a:hover {\n    text-decoration: none;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>h2 {\n    color: #444;\n    font-size: 24px;\n    letter-spacing: 0.5px;\n    font-weight: bold;\n    font-family: \"Oswald\", sans-serif;\n    margin-top: 0;\n}\n\n@media (max-width: 768px) {\n    ._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>h2 {\n        font-size: 21px;\n    }\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>h2>a {\n    color: #444;\n    text-decoration: none;\n    -webkit-transition: all 0.33s;\n    -moz-transition: all 0.33s;\n    -ms-transition: all 0.33s;\n    -o-transition: all 0.33s;\n    transition: all 0.33s;\n    line-height: 1.4;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._3prZ2IJFIKd7MRpNMEp1hK>h2>a:hover {\n    color: #da521e;\n    text-decoration: none;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._1S6K5-II004GvcTRGRG_V3 {\n    margin-bottom: 35px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._1S6K5-II004GvcTRGRG_V3>p {\n    font-size: 15px;\n    line-height: 25px;\n    padding-top: 0;\n    margin-top: 0;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._1S6K5-II004GvcTRGRG_V3>img {\n    margin: 12px auto;\n    padding-top: 7px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._1S6K5-II004GvcTRGRG_V3>h4{\n    margin-bottom: 25px;\n    font-weight: normal;\n    color: #888;\n    font-size: 16px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._1S6K5-II004GvcTRGRG_V3>h3{\n    color: #da521e;\n    font-weight: bold;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._7i834lzQeJSQ7gtY3xvCn>a {\n    border: 1px solid #da521e;\n    color: #da521e;\n    display: inline-block;\n    font-size: 12px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    padding: 10px 18px;\n}\n\n._3D0Kt1fHT2mrO1_2NDGof>div._7i834lzQeJSQ7gtY3xvCn>a:hover {\n    background: #da521e;\n    color: #fff;\n    text-decoration: none;\n}", ""]);
 
 // exports
 exports.locals = {

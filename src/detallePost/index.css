@@ -57,6 +57,23 @@
     margin-top: 0;
 }
 
+.detallePost>div.entryContent>img {
+    margin: 12px auto;
+    padding-top: 7px;
+}
+
+.detallePost>div.entryContent>h4{
+    margin-bottom: 25px;
+    font-weight: normal;
+    color: #888;
+    font-size: 16px;
+}
+
+.detallePost>div.entryContent>h3{
+    color: #da521e;
+    font-weight: bold;
+}
+
 .detallePost>div.continueReading>a {
     border: 1px solid #da521e;
     color: #da521e;

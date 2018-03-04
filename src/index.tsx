@@ -2,8 +2,9 @@ import * as React from 'react';
 import './index.css';
 import { PostBlog, postContent, postThumb } from './index.css';
 import { Footer } from './footer';
-import { DetallePost, IProps as detalleProps } from './detallePost';
+import { DetallePost, IProps as detalleProps, enumTypePost } from './detallePost';
 
+export { enumTypePost, detalleProps };
 export interface IProps {
     urlImage: string;
     dateString: string;

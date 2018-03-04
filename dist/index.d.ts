@@ -1,6 +1,7 @@
 /// <reference types="react" />
 import './index.css';
-import { IProps as detalleProps } from './detallePost';
+import { IProps as detalleProps, enumTypePost } from './detallePost';
+export { enumTypePost, detalleProps };
 export interface IProps {
     urlImage: string;
     dateString: string;
