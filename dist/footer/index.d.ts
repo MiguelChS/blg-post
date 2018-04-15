@@ -1,5 +1,4 @@
 /// <reference types="react" />
-import './index.css';
 export interface IProps {
     fecha: string;
 }

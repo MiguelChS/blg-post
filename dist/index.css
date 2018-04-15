@@ -1,0 +1,129 @@
+.blg-post {
+  background: #fff;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 2px 0 rgba(51, 51, 51, 0.08), 0 0 2px 0 rgba(51, 51, 51, 0.08);
+  box-shadow: 0 0 2px 0 rgba(51, 51, 51, 0.08), 0 0 2px 0 rgba(51, 51, 51, 0.08); }
+  .blg-post div.postContent {
+    overflow: hidden;
+    padding: 40px; }
+    @media (max-width: 450px) {
+      .blg-post div.postContent {
+        padding: 15px; } }
+  .blg-post div.postThumb a {
+    color: #444;
+    text-decoration: none;
+    -webkit-transition: all 0.33s;
+    -moz-transition: all 0.33s;
+    -ms-transition: all 0.33s;
+    -o-transition: all 0.33s;
+    transition: all 0.33s;
+    line-height: 1.4; }
+    .blg-post div.postThumb a img {
+      width: 100%; }
+  .blg-post .postFooter {
+    overflow: hidden;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 40px;
+    padding-top: 20px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+    @media (max-width: 450px) {
+      .blg-post .postFooter > ul {
+        float: none !important;
+        text-align: center;
+        margin-bottom: 10px;
+        display: block; } }
+    .blg-post .postFooter > ul.author {
+      color: #777;
+      font-style: italic;
+      font-size: 14px;
+      margin-left: 0; }
+      .blg-post .postFooter > ul.author li {
+        margin: 0;
+        padding: 0; }
+        .blg-post .postFooter > ul.author li a {
+          color: #777;
+          line-height: 1;
+          margin-bottom: 0;
+          padding-bottom: 0; }
+          .blg-post .postFooter > ul.author li a:hover {
+            color: #da521e;
+            text-decoration: none; }
+    .blg-post .postFooter > ul.socialRed {
+      line-height: 1;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+      .blg-post .postFooter > ul.socialRed li:first-child, .blg-post .postFooter > ul.socialRed li:last-child {
+        padding-left: 0px; }
+      .blg-post .postFooter > ul.socialRed li a {
+        color: #c2c2c2;
+        font-size: 16px;
+        padding-left: 3px; }
+        .blg-post .postFooter > ul.socialRed li a:hover {
+          color: #da521e; }
+  .blg-post .detallePost div.title {
+    margin: 0 auto 22px; }
+    .blg-post .detallePost div.title a {
+      color: #da521e;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px; }
+      .blg-post .detallePost div.title a:hover {
+        text-decoration: none; }
+    .blg-post .detallePost div.title h2 {
+      color: #444;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+      font-family: "Oswald", sans-serif;
+      margin-top: 0; }
+      @media (max-width: 768px) {
+        .blg-post .detallePost div.title h2 {
+          font-size: 21px; } }
+      .blg-post .detallePost div.title h2 a {
+        color: #444;
+        text-decoration: none;
+        -webkit-transition: all 0.33s;
+        -moz-transition: all 0.33s;
+        -ms-transition: all 0.33s;
+        -o-transition: all 0.33s;
+        transition: all 0.33s;
+        line-height: 1.4; }
+        .blg-post .detallePost div.title h2 a:hover {
+          color: #da521e;
+          text-decoration: none; }
+  .blg-post .detallePost div.entryContent {
+    margin-bottom: 35px; }
+    .blg-post .detallePost div.entryContent p {
+      font-size: 15px;
+      line-height: 25px;
+      padding-top: 0;
+      margin-top: 0; }
+    .blg-post .detallePost div.entryContent img {
+      margin: 12px auto;
+      padding-top: 7px; }
+    .blg-post .detallePost div.entryContent h4 {
+      margin-bottom: 25px;
+      font-weight: normal;
+      color: #888;
+      font-size: 16px; }
+    .blg-post .detallePost div.entryContent h3 {
+      color: #da521e;
+      font-weight: bold; }
+  .blg-post .detallePost div.continueReading > a {
+    border: 1px solid #da521e;
+    color: #da521e;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 18px; }
+    .blg-post .detallePost div.continueReading > a:hover {
+      background: #da521e;
+      color: #fff;
+      text-decoration: none; }
+
+/*# sourceMappingURL=index.css.map*/

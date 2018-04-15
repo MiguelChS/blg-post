@@ -1,0 +1,56 @@
+.postFooter {
+  overflow: hidden;
+  border-top: 1px solid #e2e2e2;
+  margin-top: 40px;
+  padding-top: 20px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  >ul {
+    @media (max-width: 450px) {
+      float: none !important;
+      text-align: center;
+      margin-bottom: 10px;
+      display: block;
+    }
+    &.author {
+      color: #777;
+      font-style: italic;
+      font-size: 14px;
+      margin-left: 0;
+      li {
+        margin: 0;
+        padding: 0;
+        a {
+          color: #777;
+          line-height: 1;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          &:hover {
+            color: #da521e;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &.socialRed {
+      line-height: 1;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      li {
+        &:first-child,
+        &:last-child {
+          padding-left: 0px;
+        }
+        a {
+          color: #c2c2c2;
+          font-size: 16px;
+          padding-left: 3px;
+          &:hover {
+            color: #da521e;
+          }
+        }
+      }
+    }
+  }
+}

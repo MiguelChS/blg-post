@@ -1,5 +1,4 @@
 /// <reference types="react" />
-import './index.css';
 export declare enum enumTypePost {
     PREPOST = 0,
     POST = 1,

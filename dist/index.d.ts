@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import './index.css';
+import './index.scss';
 import { IProps as detalleProps, enumTypePost } from './detallePost';
 export { enumTypePost, detalleProps };
 export interface IProps {
